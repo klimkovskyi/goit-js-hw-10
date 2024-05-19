@@ -1,0 +1,105 @@
+.form > label {
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+label input[type='number'] {
+  box-sizing: border-box;
+  display: block;
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+label input[type='number']:hover {
+  border: 1px solid #000;
+}
+
+label input[type='number']:focus-visible {
+  outline: none;
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  margin-top: 16px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 64px;
+  flex-shrink: 0;
+  margin-inline-start: 0px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset:hover,
+fieldset:focus-within {
+  border-color: #000;
+}
+
+legend {
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+fieldset > label {
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form button {
+  margin-top: 24px;
+  display: flex;
+  width: 360px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.form button:hover {
+  background: #6c8cff;
+}
