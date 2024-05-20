@@ -11,7 +11,7 @@ const hourEl = document.querySelector("[data-hours]");
 const minsEl = document.querySelector("[data-minutes]")
 const secEl = document.querySelector("[data-seconds]")
 
-const currentDate = new Date();
+// const currentDate = new Date();
 startBtn.disabled = true;
 let userSelectedDate;
 
@@ -21,6 +21,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
     onClose(selectedDates) {
+        const currentDate = new Date();
         userSelectedDate = selectedDates[0];
 
         if (userSelectedDate < currentDate) {
@@ -61,7 +62,8 @@ function start() {
     datepicker.disabled = true;
 
     const intervalId = setInterval(() => {
-        const currentDate = Date.now();
+        const currentDate = new Date().getTime();
+        console.log(currentDate);
         const deltaTime = userSelectedDate - currentDate;
 
         if (deltaTime <= 0) {
